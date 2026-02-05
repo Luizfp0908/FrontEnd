@@ -1,0 +1,105 @@
+.pokemon-page {
+  padding: 30px 20px; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 197, 61, 1) 0%, rgba(255, 94, 7, 1) 90%);
+  min-height: 100vh;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.pokemon-page h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2.8rem;
+  color: #222;
+  text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.6);
+}
+
+.pokemon-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.pokemon-list li {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 20px 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.pokemon-list li:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+}
+
+.pokemon-list li a {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #ee1515; 
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  display: block;
+  padding: 5px 0;
+}
+
+.pokemon-list li a:hover {
+  text-decoration: underline;
+  color: #d41313;
+}
+
+.load-more-button {
+  display: block;
+  margin: 30px auto 0;
+  padding: 12px 28px;
+  background-color: #ffcb05;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(255, 203, 5, 0.5);
+}
+
+.load-more-button:hover {
+  background-color: #f5b700;
+  box-shadow: 0 6px 12px rgba(245, 183, 0, 0.7);
+}
+
+
+@media (max-width: 480px) {
+  .pokemon-page h1 {
+    font-size: 2.2rem;
+  }
+
+  .pokemon-list {
+    grid-template-columns: repeat(auto-fill,minmax(120px,1fr));
+    gap: 15px;
+  }
+
+  .pokemon-list li {
+    padding: 15px 10px;
+  }
+
+  .pokemon-list li a {
+    font-size: 1rem;
+  }
+
+  .load-more-button {
+    width: 100%;
+    padding: 14px 0;
+    font-size: 16px;
+  }
+}
+
+
+

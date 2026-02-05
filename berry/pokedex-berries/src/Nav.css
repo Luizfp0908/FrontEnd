@@ -1,0 +1,44 @@
+/* Estilos para a barra de navegação */
+nav {
+  background-color: #282c34;   /* cor de fundo escura */
+  padding: 10px 20px;          /* espaçamento interno */
+  display: flex;               /* usar flexbox para alinhar itens */
+  justify-content: space-between; /* espaço entre logo e links */
+  align-items: center;         /* alinhar verticalmente */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilo para os links da nav */
+nav a {
+  color: #61dafb;              /* cor azul clara */
+  text-decoration: none;       /* remover sublinhado */
+  margin: 0 12px;              /* espaçamento horizontal */
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+/* Efeito hover nos links */
+nav a:hover {
+  color: #21a1f1;              /* azul mais forte ao passar o mouse */
+  text-decoration: underline;
+}
+
+/* Para o logo ou título na nav */
+nav .logo {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+/* Menu responsivo simples para telas menores */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    margin: 8px 0;
+  }
+}
+

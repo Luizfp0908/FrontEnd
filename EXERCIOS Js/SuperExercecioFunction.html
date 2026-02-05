@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let idade = parseInt(prompt("Digite sua idade"));
+
+
+        function DiasRestantes(idade) {
+            let tempoDeVida = 90 - idade;
+            let dias = tempoDeVida * 365;
+            let semanas = dias * 52;
+            let meses = semanas * 12;
+            let anos = meses * 12;
+
+            console.log(
+                "Você tem aproximadamente: " + dias + " dias, " + semanas + " semanas, " + meses + " meses, " + tempoDeVida + " anos restantes até 90 anos."
+            );
+
+
+
+
+
+        }
+
+
+        DiasRestantes(idade);
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+.berry-detail-page {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px 30px;
+  background: #fff8dc;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.berry-detail-page h1 {
+  text-transform: capitalize;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #d35400;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.berry-detail-page ul {
+  list-style: none;
+  padding: 0;
+}
+
+.berry-detail-page li {
+  background: #fef9f0;
+  border-left: 6px solid #f39c12; 
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(243, 156, 18, 0.15);
+  transition: background-color 0.3s ease;
+}
+
+.berry-detail-page li:hover {
+  background-color: #fff4d1;
+}
+
+.berry-detail-page li strong {
+  color: #e67e22;
+}
+
+.flavor-item {
+  margin-top: 6px;
+  padding-left: 10px;
+  font-style: italic;
+  color: #555;
+}
+
+.back-button {
+  display: block;
+  max-width: 200px;
+  margin: 40px auto 0;
+  padding: 12px 0;
+  background-color: #d35400;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(211, 84, 0, 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #e67e22;
+  box-shadow: 0 6px 16px rgba(230, 126, 34, 0.6);
+  cursor: pointer;
+}
+
+
+@media (max-width: 480px) {
+  .berry-detail-page {
+    margin: 20px 15px;
+    padding: 15px 20px;
+  }
+
+  .berry-detail-page h1 {
+    font-size: 1.8rem;
+  }
+
+  .berry-detail-page li {
+    font-size: 1rem;
+    padding: 12px 15px;
+  }
+
+  .back-button {
+    max-width: 100%;
+  }
+}

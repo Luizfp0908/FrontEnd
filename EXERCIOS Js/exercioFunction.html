@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+function getPao(dinheiro, custoPorPao) {
+    console.log("moveDireita");
+    console.log("moveCima");
+    console.log("moveEsquerda");
+    console.log("moveBaixo");
+    
+
+    console.log("Comprei " + calcPao(dinheiro, custoDoPao) + " paes");
+
+    return troco(dinheiro, custoDoPao);
+
+    
+}
+
+    getPao(10, 2);
+
+    function calcPao (valorDoDinheiro , custoDoPao){
+
+        let numerosDePaes = Math.floor(valorDoDinheiro / custoDoPao);
+        return numerosDePaes;
+    }
+
+    function troco(dinheiroInicial, custoPorPao){
+        let trocoDoPao = dinheiroInicial % custoPorPao;
+        return trocoDoPao;
+    }
+
+
+
+
+    </script>
+    
+</body>
+</html>

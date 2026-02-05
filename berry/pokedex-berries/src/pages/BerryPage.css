@@ -1,0 +1,107 @@
+.berry-page {
+  padding: 30px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: linear-gradient( 69.2deg,  rgba(77,143,251,1) 35.3%, rgba(202,51,255,1) 100.3% );
+  min-height: 100vh;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.berry-page h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2.8rem;
+  color: #e0e7ff; 
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+
+.berry-list {
+  list-style: none;
+  padding: 0;
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.berry-list li {
+  background: rgba(255, 255, 255, 0.15); 
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 50, 0.15);
+  text-align: center;
+  padding: 20px 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  color: #fff;
+}
+
+.berry-list li:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 15px rgba(0, 0, 100, 0.3);
+  background: rgb(255, 254, 254);
+}
+
+.berry-list li a {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #000000;
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  display: block;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+.berry-list li a:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+
+.load-more-button {
+  display: block;
+  margin: 30px auto 0;
+  padding: 12px 28px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #fff;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(58, 110, 232, 0.5);
+}
+
+.load-more-button:hover {
+  background-color: #2b54c6;
+  box-shadow: 0 6px 12px rgba(43, 84, 198, 0.7);
+}
+
+@media (max-width: 480px) {
+  .berry-page h1 {
+    font-size: 2.2rem;
+  }
+
+  .berry-list {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+  }
+
+  .berry-list li {
+    padding: 15px 10px;
+  }
+
+  .berry-list li a {
+    font-size: 1rem;
+  }
+
+  .load-more-button {
+    width: 100%;
+    padding: 14px 0;
+    font-size: 16px;
+  }
+}
